@@ -1,0 +1,90 @@
+@startuml Droopy's_clinic Use-case
+left to right direction
+
+actor "Врач" as Doc
+actor "Администратор" as Admn
+actor "Пациент" as Lho
+
+rectangle "Droopy's_clinic"{
+
+    usecase "Регистрация" as UC_RegLho
+    usecase "Регистрация Врача" as UC_RegDoc
+
+    usecase "Вход в систему" as Uc_LoginAdmn
+    usecase "Вход в систему" as UC_LoginDoc
+    usecase "Вход в систему" as UC_LoginLho
+
+    usecase "ЛК Админа" as UC_AdmnPA
+    usecase "ЛК Доктора" as UC_DocPA
+    usecase "ЛК Пациента" as UC_LhoPA
+
+    usecase "Поиск медкарты" as UC_SelectLhoVed
+
+    usecase "Изменить УЗ" as UC_Change
+    usecase "Одобрить изменение в системе" as UC_Approve
+    usecase "Просмотр изменений в системе" as UC_LaC
+    usecase "Откатить изменения" as UC_RBC
+
+    usecase "Отметить приход пациента" as UC_CLho
+    usecase "Отметить приход Доктора" as UC_CDoc
+ 
+    usecase "Выбрать доктора" as UC_SelectDoc
+    usecase "Просмотр расписания доктора" as UC_watchdogsTT
+
+    usecase "Запись к доктору" as UC_BookanAp
+    usecase "Отмена записи" as UC_CancelAp
+
+    usecase "Просмотреть медкарту" as UC_LookatMed
+    usecase "Изменить медкарту" as UC_ChangeMed
+
+    usecase "Подать жалобу на врача" as UC_DoAbsolutelyNothing
+}
+
+Lho -- UC_RegLho
+Lho -- UC_LoginLho
+
+UC_LoginLho -- UC_LhoPA
+
+UC_LhoPA -- UC_Change
+UC_LhoPA -- UC_DoAbsolutelyNothing
+UC_LhoPA -- UC_LookatMed
+UC_LhoPA -- UC_BookanAp
+
+UC_BookanAp -- UC_SelectDoc
+UC_BookanAp -- UC_CancelAp
+UC_BookanAp -- UC_watchdogsTT
+
+
+Doc -- UC_LoginDoc
+
+UC_LoginDoc -- UC_DocPA
+
+UC_DocPA -- UC_watchdogsTT
+UC_DocPA -- UC_SelectLhoVed
+UC_DocPA -- UC_Change
+
+UC_SelectLhoVed -- UC_ChangeMed
+
+
+Admn -- Uc_LoginAdmn
+
+Uc_LoginAdmn -- UC_AdmnPA
+
+UC_AdmnPA -- UC_Approve
+UC_AdmnPA -- UC_RBC
+UC_AdmnPA -- UC_LaC
+UC_AdmnPA -- UC_CLho
+UC_AdmnPA -- UC_CDoc
+UC_AdmnPA -- UC_Change
+UC_AdmnPA -- UC_BookanAp
+UC_AdmnPA -- UC_RegLho
+UC_AdmnPA -- UC_RegDoc
+
+UC_SelectDoc ..> UC_watchdogsTT
+UC_ChangeMed ..> UC_LookatMed
+UC_CancelAp ..> UC_watchdogsTT
+UC_Approve ..> UC_LaC
+UC_RBC ..> UC_LaC
+UC_CLho ..> UC_watchdogsTT
+UC_CDoc ..> UC_watchdogsTT
+@enduml
