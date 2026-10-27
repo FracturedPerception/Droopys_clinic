@@ -1,0 +1,398 @@
+{
+  "$schema": "https://raw.githubusercontent.com/dineug/erd-editor/main/json-schema/schema.json",
+  "version": "3.0.0",
+  "settings": {
+    "originX": 0,
+    "originY": 0,
+    "zoomLevel": 1,
+    "show": 431,
+    "database": 4,
+    "databaseName": "",
+    "canvasType": "ERD",
+    "language": 1,
+    "tableNameCase": 4,
+    "columnNameCase": 2,
+    "bracketType": 1,
+    "relationshipDataTypeSync": true,
+    "columnOrder": [
+      1,
+      2,
+      4,
+      8,
+      16,
+      32,
+      64
+    ],
+    "maxWidthComment": -1,
+    "lockSettings": 63
+  },
+  "doc": {
+    "tableIds": [
+      "03h4k6tkvqxv6qaxiz8fczcj9",
+      "03h4k6tkvwayz84ouymf5u0l5",
+      "03h4k6tkvwayz84ouyyhc9wyj",
+      "03h4k6tkvwayz84ouz8bytutx",
+      "03h4k6tkvwayz84ouzk2rj10a"
+    ],
+    "relationshipIds": [
+      "03h4k6tkvwayz84ouzuj0ccfg",
+      "03h4k6tkvwayz84ouzy0v1i9r",
+      "03h4k6tkvwayz84ouzz8uzae2",
+      "03h4k6tkvwayz84ov00rtgr4k",
+      "03h4k6tkw1twkoqvtgn4571nh",
+      "03h4k6tkw1twkoqvtgnvjztej"
+    ]
+  },
+  "collections": {
+    "tableEntities": {
+      "03h4k6tkvqxv6qaxiz8fczcj9": {
+        "id": "03h4k6tkvqxv6qaxiz8fczcj9",
+        "name": "users",
+        "columnIds": [
+          "03h4k6tkvqxv6qaxiz9tcuxcu",
+          "03h4k6tkvwayz84ouyg0p74hj",
+          "03h4k6tkvwayz84ouyhqo13lh",
+          "03h4k6tkvwayz84ouyjqyc64t"
+        ],
+        "ui": {
+          "x": 231.9149,
+          "y": 197.2128
+        }
+      },
+      "03h4k6tkvwayz84ouymf5u0l5": {
+        "id": "03h4k6tkvwayz84ouymf5u0l5",
+        "name": "patients",
+        "columnIds": [
+          "03h4k6tkvwayz84ouyn2x0m7l",
+          "03h4k6tkvwayz84ouyqpm01gu",
+          "03h4k6tkvwayz84ouysclsqcg",
+          "03h4k6tkvwayz84ouytqbzwh9",
+          "03h4k6tkvwayz84ouyvdbbf7g"
+        ],
+        "ui": {
+          "x": 786.7944,
+          "y": 48.17
+        }
+      },
+      "03h4k6tkvwayz84ouyyhc9wyj": {
+        "id": "03h4k6tkvwayz84ouyyhc9wyj",
+        "name": "doctors",
+        "columnIds": [
+          "03h4k6tkvwayz84ouz0ghbf4i",
+          "03h4k6tkvwayz84ouz1wucry3",
+          "03h4k6tkvwayz84ouz3uuhcn4",
+          "03h4k6tkvwayz84ouz5cu5tfc"
+        ],
+        "ui": {
+          "x": 788.195,
+          "y": 338.3415
+        }
+      },
+      "03h4k6tkvwayz84ouz8bytutx": {
+        "id": "03h4k6tkvwayz84ouz8bytutx",
+        "name": "medical_records",
+        "columnIds": [
+          "03h4k6tkvwayz84ouz939jly2",
+          "03h4k6tkvwayz84ouzbog5jyz",
+          "03h4k6tkvwayz84ouze7lja6d",
+          "03h4k6tkvwayz84ouzfeoe3ry",
+          "03h4k6tkvwayz84ouzhqfqnls"
+        ],
+        "ui": {
+          "x": 1340.2683,
+          "y": 51.2195
+        }
+      },
+      "03h4k6tkvwayz84ouzk2rj10a": {
+        "id": "03h4k6tkvwayz84ouzk2rj10a",
+        "name": "appointments",
+        "columnIds": [
+          "03h4k6tkvwayz84ouzl6hu7qf",
+          "03h4k6tkvwayz84ouzmud0p84",
+          "03h4k6tkvwayz84ouzpcdsot0",
+          "03h4k6tkvwayz84ouzqufz52w",
+          "03h4k6tkvwayz84ouzugn1oh0"
+        ],
+        "ui": {
+          "x": 1311,
+          "y": 280
+        }
+      }
+    },
+    "tableColumnEntities": {
+      "03h4k6tkvqxv6qaxiz9tcuxcu": {
+        "id": "03h4k6tkvqxv6qaxiz9tcuxcu",
+        "tableId": "03h4k6tkvqxv6qaxiz8fczcj9",
+        "name": "id",
+        "dataType": "INT",
+        "options": 3
+      },
+      "03h4k6tkvwayz84ouyg0p74hj": {
+        "id": "03h4k6tkvwayz84ouyg0p74hj",
+        "tableId": "03h4k6tkvqxv6qaxiz8fczcj9",
+        "name": "login",
+        "dataType": "VARCHAR(50)",
+        "options": 12
+      },
+      "03h4k6tkvwayz84ouyhqo13lh": {
+        "id": "03h4k6tkvwayz84ouyhqo13lh",
+        "tableId": "03h4k6tkvqxv6qaxiz8fczcj9",
+        "name": "password",
+        "dataType": "VARCHAR(255)",
+        "options": 8
+      },
+      "03h4k6tkvwayz84ouyjqyc64t": {
+        "id": "03h4k6tkvwayz84ouyjqyc64t",
+        "tableId": "03h4k6tkvqxv6qaxiz8fczcj9",
+        "name": "role",
+        "dataType": "ENUM('PATIENT','DOCTOR','ADMIN')",
+        "options": 8
+      },
+      "03h4k6tkvwayz84ouyn2x0m7l": {
+        "id": "03h4k6tkvwayz84ouyn2x0m7l",
+        "tableId": "03h4k6tkvwayz84ouymf5u0l5",
+        "name": "id",
+        "dataType": "INT",
+        "options": 3
+      },
+      "03h4k6tkvwayz84ouyqpm01gu": {
+        "id": "03h4k6tkvwayz84ouyqpm01gu",
+        "tableId": "03h4k6tkvwayz84ouymf5u0l5",
+        "name": "user_id",
+        "dataType": "INT",
+        "options": 12
+      },
+      "03h4k6tkvwayz84ouysclsqcg": {
+        "id": "03h4k6tkvwayz84ouysclsqcg",
+        "tableId": "03h4k6tkvwayz84ouymf5u0l5",
+        "name": "fio",
+        "dataType": "VARCHAR(100)",
+        "options": 0
+      },
+      "03h4k6tkvwayz84ouytqbzwh9": {
+        "id": "03h4k6tkvwayz84ouytqbzwh9",
+        "tableId": "03h4k6tkvwayz84ouymf5u0l5",
+        "name": "phone",
+        "dataType": "VARCHAR(20)",
+        "options": 0
+      },
+      "03h4k6tkvwayz84ouyvdbbf7g": {
+        "id": "03h4k6tkvwayz84ouyvdbbf7g",
+        "tableId": "03h4k6tkvwayz84ouymf5u0l5",
+        "name": "birth_date",
+        "dataType": "DATE",
+        "options": 0
+      },
+      "03h4k6tkvwayz84ouz0ghbf4i": {
+        "id": "03h4k6tkvwayz84ouz0ghbf4i",
+        "tableId": "03h4k6tkvwayz84ouyyhc9wyj",
+        "name": "id",
+        "dataType": "INT",
+        "options": 3
+      },
+      "03h4k6tkvwayz84ouz1wucry3": {
+        "id": "03h4k6tkvwayz84ouz1wucry3",
+        "tableId": "03h4k6tkvwayz84ouyyhc9wyj",
+        "name": "user_id",
+        "dataType": "INT",
+        "options": 12
+      },
+      "03h4k6tkvwayz84ouz3uuhcn4": {
+        "id": "03h4k6tkvwayz84ouz3uuhcn4",
+        "tableId": "03h4k6tkvwayz84ouyyhc9wyj",
+        "name": "fio",
+        "dataType": "VARCHAR(100)",
+        "options": 0
+      },
+      "03h4k6tkvwayz84ouz5cu5tfc": {
+        "id": "03h4k6tkvwayz84ouz5cu5tfc",
+        "tableId": "03h4k6tkvwayz84ouyyhc9wyj",
+        "name": "specialization",
+        "dataType": "VARCHAR(100)",
+        "options": 0
+      },
+      "03h4k6tkvwayz84ouz939jly2": {
+        "id": "03h4k6tkvwayz84ouz939jly2",
+        "tableId": "03h4k6tkvwayz84ouz8bytutx",
+        "name": "id",
+        "dataType": "INT",
+        "options": 3
+      },
+      "03h4k6tkvwayz84ouzbog5jyz": {
+        "id": "03h4k6tkvwayz84ouzbog5jyz",
+        "tableId": "03h4k6tkvwayz84ouz8bytutx",
+        "name": "patient_id",
+        "dataType": "INT",
+        "options": 8
+      },
+      "03h4k6tkvwayz84ouze7lja6d": {
+        "id": "03h4k6tkvwayz84ouze7lja6d",
+        "tableId": "03h4k6tkvwayz84ouz8bytutx",
+        "name": "doctor_id",
+        "dataType": "INT",
+        "options": 8
+      },
+      "03h4k6tkvwayz84ouzfeoe3ry": {
+        "id": "03h4k6tkvwayz84ouzfeoe3ry",
+        "tableId": "03h4k6tkvwayz84ouz8bytutx",
+        "name": "diagnosis",
+        "dataType": "TEXT",
+        "options": 0
+      },
+      "03h4k6tkvwayz84ouzhqfqnls": {
+        "id": "03h4k6tkvwayz84ouzhqfqnls",
+        "tableId": "03h4k6tkvwayz84ouz8bytutx",
+        "name": "visit_date",
+        "dataType": "DATETIME",
+        "default": "CURRENT_TIMESTAMP",
+        "options": 0
+      },
+      "03h4k6tkvwayz84ouzl6hu7qf": {
+        "id": "03h4k6tkvwayz84ouzl6hu7qf",
+        "tableId": "03h4k6tkvwayz84ouzk2rj10a",
+        "name": "id",
+        "dataType": "INT",
+        "options": 3
+      },
+      "03h4k6tkvwayz84ouzmud0p84": {
+        "id": "03h4k6tkvwayz84ouzmud0p84",
+        "tableId": "03h4k6tkvwayz84ouzk2rj10a",
+        "name": "patient_id",
+        "dataType": "INT",
+        "options": 8
+      },
+      "03h4k6tkvwayz84ouzpcdsot0": {
+        "id": "03h4k6tkvwayz84ouzpcdsot0",
+        "tableId": "03h4k6tkvwayz84ouzk2rj10a",
+        "name": "doctor_id",
+        "dataType": "INT",
+        "options": 8
+      },
+      "03h4k6tkvwayz84ouzqufz52w": {
+        "id": "03h4k6tkvwayz84ouzqufz52w",
+        "tableId": "03h4k6tkvwayz84ouzk2rj10a",
+        "name": "appt_date",
+        "dataType": "DATETIME",
+        "options": 8
+      },
+      "03h4k6tkvwayz84ouzugn1oh0": {
+        "id": "03h4k6tkvwayz84ouzugn1oh0",
+        "tableId": "03h4k6tkvwayz84ouzk2rj10a",
+        "name": "status",
+        "dataType": "ENUM('BOOKED','CANCELLED','PATIENT_CAME','DOCTOR_CAME','DONE')",
+        "default": "'BOOKED'",
+        "options": 0
+      }
+    },
+    "relationshipEntities": {
+      "03h4k6tkvwayz84ouzuj0ccfg": {
+        "id": "03h4k6tkvwayz84ouzuj0ccfg",
+        "relationshipType": 4,
+        "onDelete": 1,
+        "onUpdate": 1,
+        "start": {
+          "tableId": "03h4k6tkvqxv6qaxiz8fczcj9",
+          "columnIds": [
+            "03h4k6tkvqxv6qaxiz9tcuxcu"
+          ]
+        },
+        "end": {
+          "tableId": "03h4k6tkvwayz84ouymf5u0l5",
+          "columnIds": [
+            "03h4k6tkvwayz84ouyqpm01gu"
+          ]
+        }
+      },
+      "03h4k6tkvwayz84ouzy0v1i9r": {
+        "id": "03h4k6tkvwayz84ouzy0v1i9r",
+        "relationshipType": 4,
+        "onDelete": 1,
+        "onUpdate": 1,
+        "start": {
+          "tableId": "03h4k6tkvqxv6qaxiz8fczcj9",
+          "columnIds": [
+            "03h4k6tkvqxv6qaxiz9tcuxcu"
+          ]
+        },
+        "end": {
+          "tableId": "03h4k6tkvwayz84ouyyhc9wyj",
+          "columnIds": [
+            "03h4k6tkvwayz84ouz1wucry3"
+          ]
+        }
+      },
+      "03h4k6tkvwayz84ouzz8uzae2": {
+        "id": "03h4k6tkvwayz84ouzz8uzae2",
+        "relationshipType": 4,
+        "onDelete": 1,
+        "onUpdate": 1,
+        "start": {
+          "tableId": "03h4k6tkvwayz84ouymf5u0l5",
+          "columnIds": [
+            "03h4k6tkvwayz84ouyn2x0m7l"
+          ]
+        },
+        "end": {
+          "tableId": "03h4k6tkvwayz84ouz8bytutx",
+          "columnIds": [
+            "03h4k6tkvwayz84ouzbog5jyz"
+          ]
+        }
+      },
+      "03h4k6tkvwayz84ov00rtgr4k": {
+        "id": "03h4k6tkvwayz84ov00rtgr4k",
+        "relationshipType": 4,
+        "onDelete": 1,
+        "onUpdate": 1,
+        "start": {
+          "tableId": "03h4k6tkvwayz84ouyyhc9wyj",
+          "columnIds": [
+            "03h4k6tkvwayz84ouz0ghbf4i"
+          ]
+        },
+        "end": {
+          "tableId": "03h4k6tkvwayz84ouz8bytutx",
+          "columnIds": [
+            "03h4k6tkvwayz84ouze7lja6d"
+          ]
+        }
+      },
+      "03h4k6tkw1twkoqvtgn4571nh": {
+        "id": "03h4k6tkw1twkoqvtgn4571nh",
+        "relationshipType": 4,
+        "onDelete": 1,
+        "onUpdate": 1,
+        "start": {
+          "tableId": "03h4k6tkvwayz84ouymf5u0l5",
+          "columnIds": [
+            "03h4k6tkvwayz84ouyn2x0m7l"
+          ]
+        },
+        "end": {
+          "tableId": "03h4k6tkvwayz84ouzk2rj10a",
+          "columnIds": [
+            "03h4k6tkvwayz84ouzmud0p84"
+          ]
+        }
+      },
+      "03h4k6tkw1twkoqvtgnvjztej": {
+        "id": "03h4k6tkw1twkoqvtgnvjztej",
+        "relationshipType": 4,
+        "onDelete": 1,
+        "onUpdate": 1,
+        "start": {
+          "tableId": "03h4k6tkvwayz84ouyyhc9wyj",
+          "columnIds": [
+            "03h4k6tkvwayz84ouz0ghbf4i"
+          ]
+        },
+        "end": {
+          "tableId": "03h4k6tkvwayz84ouzk2rj10a",
+          "columnIds": [
+            "03h4k6tkvwayz84ouzpcdsot0"
+          ]
+        }
+      }
+    }
+  }
+}
